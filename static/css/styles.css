@@ -1001,5 +1001,25 @@ img {
     }
 }
 
+/* WhatsApp-style SVG branding */
+.whatsapp-float {
+    color: #ffffff !important;
+    background: #25D366 !important;
+}
+
+.whatsapp-float svg {
+    display: block;
+    width: 29px;
+    height: 29px;
+    fill: currentColor;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float svg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
 
 /* End mobile final spacing adjustments */
