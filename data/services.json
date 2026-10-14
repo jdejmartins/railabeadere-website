@@ -1,0 +1,47 @@
+{
+  "catering": {
+    "title": "Mobile Catering",
+    "title_tet": "Katering Móvel",
+    "description": "Delicious food and catering services for events, meetings, celebrations and daily meals.",
+    "description_tet": "Hahan no katering ba eventu, reuniaun, selebrasaun no refeisaun loroloron.",
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=85",
+    "action": "Request Catering",
+    "message": "Hello RAILABeadere, I would like to ask about Mobile Catering."
+  },
+  "bus": {
+    "title": "Maliana – Dili Bus Transportation",
+    "title_tet": "Transporte Bis Maliana – Dili",
+    "description": "Ask about travel schedules, fares, available seats and reservations for travel between Maliana and Dili.",
+    "description_tet": "Husu kona-ba oras viajen, tarifa, fatin livre no reserva entre Maliana no Dili.",
+    "image": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1000&q=85",
+    "action": "Ask About a Seat",
+    "message": "Hello RAILABeadere, I would like to ask about the Maliana-Dili bus."
+  },
+  "kos": {
+    "title": "RAILA KOS",
+    "title_tet": "RAILA KOS",
+    "description": "Comfortable accommodation. Contact us for room availability, rates and location.",
+    "description_tet": "Akomodasaun ne'ebé komfortável. Kontaktu ami kona-ba kuartu, folin no lokalizasaun.",
+    "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=85",
+    "action": "Ask About Rooms",
+    "message": "Hello RAILABeadere, I would like to ask about RAILA KOS."
+  },
+  "edtl": {
+    "title": "EDTL Pulsa Service",
+    "title_tet": "Servisu Pulsa EDTL",
+    "description": "Assistance with electricity credit top-ups. Please confirm the amount and meter details before payment.",
+    "description_tet": "Ajuda atu aumenta pulsa eletrisidade. Konfirma montante no detallu kontadór molok selu.",
+    "image": "/static/images/edtl-electric-meter.png",
+    "action": "Request Pulsa",
+    "message": "Hello RAILABeadere, I need help with EDTL Pulsa."
+  },
+  "shopping": {
+    "title": "Online Shopping Assistance",
+    "title_tet": "Ajuda Kompras Online",
+    "description": "Get help finding products, placing online orders and arranging delivery.",
+    "description_tet": "Hetan ajuda atu buka produtu, halo pedidu online no organiza entrega.",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=85",
+    "action": "Shop with Us",
+    "message": "Hello RAILABeadere, I need assistance with online shopping."
+  }
+}
