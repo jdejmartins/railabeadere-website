@@ -46,7 +46,25 @@
 <div class="section-heading"><p class="eyebrow" data-en="WHAT WE DO" data-tet="SAIDA MAK AMI HALO">WHAT WE DO</p><h2 data-en="Our Services" data-tet="Ami-nia Servisu">Our Services</h2><p data-en="Quality services, designed around your needs." data-tet="Servisu ho kualidade, ne'ebÃ© tuir imi-nia nesesidade.">Quality services, designed around your needs.</p></div>
 <div class="service-grid">
 {% for service_id, service in services.items() %}
-<article class="service-card"><img class="service-photo" src="{{ service.image }}" alt="{{ service.title }}" loading="lazy"><div class="service-icon">{% if service_id == 'catering' %}F{% elif service_id == 'bus' %}B{% elif service_id == 'kos' %}K{% elif service_id == 'edtl' %}E{% else %}S{% endif %}</div><div class="service-body"><h3 data-en="{{ service.title }}" data-tet="{{ service.title_tet }}">{{ service.title }}</h3><p data-en="{{ service.description }}" data-tet="{{ service.description_tet }}">{{ service.description }}</p><a class="text-link" href="{{ url_for('service_detail', service_id=service_id) }}" data-en="{{ service.action }} →" data-tet="Husu Informasaun →">{{ service.action }} →</a></div></article>
+<article class="service-card"><img class="service-photo" src="{{ service.image }}" alt="{{ service.title }}" loading="lazy">
+
+
+<div class="service-icon" aria-hidden="true">
+{% if service_id == 'catering' %}
+<svg viewBox="0 0 24 24"><path d="M3 11h18M5 11l1 9h12l1-9M8 7a4 4 0 0 1 8 0M12 3v1M3 11V8h18v3M9 15h6" /></svg>
+{% elif service_id == 'bus' %}
+<svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="17" rx="3"/><path d="M4 12h16M8 7h8M7 16h2M15 16h2M7 20v2M17 20v2"/></svg>
+{% elif service_id == 'kos' %}
+<svg viewBox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v11h14V10M9 21v-7h6v7"/></svg>
+{% elif service_id == 'edtl' %}
+<svg viewBox="0 0 24 24"><path d="M13 2 5 13h6l-1 9 9-12h-6z"/></svg>
+{% else %}
+<svg viewBox="0 0 24 24"><path d="M3 4h2l2.5 12h11L21 8H6M9 20h.01M17 20h.01"/></svg>
+{% endif %}
+</div>
+
+
+<div class="service-body"><h3 data-en="{{ service.title }}" data-tet="{{ service.title_tet }}">{{ service.title }}</h3><p data-en="{{ service.description }}" data-tet="{{ service.description_tet }}">{{ service.description }}</p><a class="text-link" href="{{ url_for('service_detail', service_id=service_id) }}" data-en="{{ service.action }} →" data-tet="Husu Informasaun →">{{ service.action }} →</a></div></article>
 {% endfor %}
 </div><p class="notice" data-en="Schedules, prices, availability and service terms are confirmed directly with RAILABeadere before an order or booking is finalized." data-tet="Oras, folin, disponibilidade no kondisaun servisu sei konfirma diretamente ho RAILABeadere molok finaliza pedidu ka reserva.">Schedules, prices, availability and service terms are confirmed directly with RAILABeadere before an order or booking is finalized.</p>
 </div></section>
@@ -87,13 +105,18 @@
 </main>
 <footer><div class="container footer-main"><a class="footer-brand" href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo.svg') }}" alt=""><span>RAILA<span>Beadere</span><small data-en="SERVICES • TRANSPORT • COMMERCE" data-tet="SERVISU • TRANSPORTE • KOMÃ‰RSIU">SERVICES • TRANSPORT • COMMERCE</small></span></a><p data-en="Together for a better and more connected Timor-Leste." data-tet="Hamutu ba Timor-Leste ne'ebÃ© di'ak liu no konekta liu.">Together for a better and more connected Timor-Leste.</p><div class="footer-links"><a href="{{ url_for('home') }}" data-en="Home" data-tet="Uma">Home</a><a href="{{ url_for('about') }}" data-en="About Us" data-tet="Kona-ba Ami">About Us</a><a href="#services" data-en="Services" data-tet="Servisu">Services</a><a href="{{ url_for('contact') }}" data-en="Contact" data-tet="Kontaktu">Contact</a></div></div><div class="copyright">© <span id="year"></span> RAILABeadere. <span data-en="All rights reserved." data-tet="Direitu hotu-hotu rezervadu.">All rights reserved.</span></div></footer>
 
+
 <a class="whatsapp-float"
    href="https://wa.me/{{ whatsapp_number }}?text=Hello%20RAILABeadere"
    target="_blank"
    rel="noopener"
    aria-label="Chat with RAILABeadere on WhatsApp">
-   W
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20.5 11.8a8.6 8.6 0 0 1-12.7 7.5L3 20.5l1.3-4.6A8.6 8.6 0 1 1 20.5 11.8Z"/>
+        <path d="M8.5 7.7c-.3-.6-.6-.6-.9-.6h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.9c.2.2 2.5 4 6.2 5.1 3 .9 3.7.7 4.4.6.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.8-.5l-2.5-1.2c-.3-.1-.6-.2-.8.2l-1.1 1.3c-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-.9-.8-1.5-1.8-1.7-2.2-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.2 0-.5-.1-.7z"/>
+    </svg>
 </a>
+
 
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body></html>
