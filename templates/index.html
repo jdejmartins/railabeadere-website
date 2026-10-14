@@ -50,7 +50,40 @@
 {% endfor %}
 </div><p class="notice" data-en="Schedules, prices, availability and service terms are confirmed directly with RAILABeadere before an order or booking is finalized." data-tet="Oras, folin, disponibilidade no kondisaun servisu sei konfirma diretamente ho RAILABeadere molok finaliza pedidu ka reserva.">Schedules, prices, availability and service terms are confirmed directly with RAILABeadere before an order or booking is finalized.</p>
 </div></section>
-<section class="contact-section"><div class="container contact-bottom-layout"><div class="contact-bottom-intro"><p class="eyebrow" data-en="LET'S TALK" data-tet="MAI KONTATU">LET'S TALK</p><h2 data-en="How can we help you?" data-tet="OinsÃ¡ mak ami bele ajuda ita?">How can we help you?</h2><p data-en="Contact us for bookings, orders, prices or more information about our services." data-tet="Kontaktu ami ba reserva, pedidu, folin ka informasaun tan kona-ba ami-nia servisu.">Contact us for bookings, orders, prices or more information about our services.</p></div><div></div><div class="contact-cards"><a class="contact-card" href="https://wa.me/{{ whatsapp_number }}?text=Hello%20RAILABeadere" target="_blank" rel="noopener"><span class="contact-symbol">â—‰</span><span><b>WhatsApp</b><small>+670 7723 1502</small></span><strong>â†—</strong></a><a class="contact-card" href="mailto:{{ company_email }}?subject=RAILABeadere%20Service%20Inquiry"><span class="contact-symbol">âœ‰</span><span><b>Email</b><small>{{ company_email }}</small></span><strong>â†—</strong></a><div class="contact-card"><span class="contact-symbol">âŒ–</span><span><b data-en="Service Area" data-tet="Ãrea Servisu">Service Area</b><small data-en="Maliana and Dili, Timor-Leste" data-tet="Maliana no Dili, Timor-Leste">Maliana and Dili, Timor-Leste</small></span></div></div></div></section>
+<section class="contact-section"><div class="container contact-bottom-layout"><div class="contact-bottom-intro"><p class="eyebrow" data-en="LET'S TALK" data-tet="MAI KONTATU">LET'S TALK</p><h2 data-en="How can we help you?" data-tet="OinsÃ¡ mak ami bele ajuda ita?">How can we help you?</h2><p data-en="Contact us for bookings, orders, prices or more information about our services." data-tet="Kontaktu ami ba reserva, pedidu, folin ka informasaun tan kona-ba ami-nia servisu.">Contact us for bookings, orders, prices or more information about our services.</p></div><div></div>
+  
+<div class="contact-cards">
+    <a class="contact-card"
+       href="https://wa.me/{{ whatsapp_number }}?text=Hello%20RAILABeadere"
+       target="_blank" rel="noopener">
+        <span class="contact-symbol" aria-hidden="true">W</span>
+        <span>
+            <b>WhatsApp</b>
+            <small>+670 7723 1502</small>
+        </span>
+        <strong aria-hidden="true">→</strong>
+    </a>
+
+    <a class="contact-card"
+       href="mailto:{{ company_email }}?subject=RAILABeadere%20Service%20Inquiry">
+        <span class="contact-symbol" aria-hidden="true">@</span>
+        <span>
+            <b>Email</b>
+            <small>{{ company_email }}</small>
+        </span>
+        <strong aria-hidden="true">→</strong>
+    </a>
+
+    <div class="contact-card">
+        <span class="contact-symbol" aria-hidden="true">⌖</span>
+        <span>
+            <b data-en="Service Area" data-tet="Área Servisu">Service Area</b>
+            <small data-en="Maliana and Dili, Timor-Leste"
+                   data-tet="Maliana no Dili, Timor-Leste">Maliana and Dili, Timor-Leste</small>
+        </span>
+    </div>
+</div>
+</section>
 </main>
 <footer><div class="container footer-main"><a class="footer-brand" href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo.svg') }}" alt=""><span>RAILA<span>Beadere</span><small data-en="SERVICES • TRANSPORT • COMMERCE" data-tet="SERVISU • TRANSPORTE • KOMÃ‰RSIU">SERVICES • TRANSPORT • COMMERCE</small></span></a><p data-en="Together for a better and more connected Timor-Leste." data-tet="Hamutu ba Timor-Leste ne'ebÃ© di'ak liu no konekta liu.">Together for a better and more connected Timor-Leste.</p><div class="footer-links"><a href="{{ url_for('home') }}" data-en="Home" data-tet="Uma">Home</a><a href="{{ url_for('about') }}" data-en="About Us" data-tet="Kona-ba Ami">About Us</a><a href="#services" data-en="Services" data-tet="Servisu">Services</a><a href="{{ url_for('contact') }}" data-en="Contact" data-tet="Kontaktu">Contact</a></div></div><div class="copyright">© <span id="year"></span> RAILABeadere. <span data-en="All rights reserved." data-tet="Direitu hotu-hotu rezervadu.">All rights reserved.</span></div></footer>
 
